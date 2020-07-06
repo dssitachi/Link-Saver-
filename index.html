@@ -18,6 +18,25 @@
 
     <div class="container">
         <div class="panel" id="addLinkPanel">
+            <h3 class="panel-heading">Add Link</h3>
+
+            <form id="addLinkForm">
+                <input type="text" name="title" id="linkTitle" class="form-control"
+                placeholder="Title">
+
+                <input type="text" name="url" id="linkUrl" class="form-control"
+                placeholder="URL">
+
+                <input type="text" name="category" id="linkCategory" class="form-control"
+                placeholder="Categories (Comma Separated)">
+
+                <div class="addedCategories">
+
+                </div>
+
+                <input type="submit" id="submitButton" value="Submit">
+                <input type="submit" id="cancelButton" value="Cancel">
+            </form>
 
         </div>
 
