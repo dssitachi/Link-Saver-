@@ -57,8 +57,18 @@ a:hover {
     font-size: 20px;
 }
 
+.header {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--main-grey);
+}
+
 
 /* panel */
+
+.hidden {
+    display: none;
+}
 
 .panel {
     background-color: white;
@@ -69,11 +79,7 @@ a:hover {
 
 }
 
-.panel-heading {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: var(--main-grey);
-}
+
 
 /* form */
 
@@ -103,3 +109,42 @@ input[type='submit']:hover, button:hover {
     color: var(--main-accent);
     background-color: whitesmoke;
 } 
+
+
+/* Links */
+
+.btn-sm {
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+.link {
+    position: relative;
+}
+
+.link-options {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.link-date {
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.addedCategories {
+    margin: 10px;
+}
+
+.category {
+    padding: 3px;
+    border: 1px solid var(--main-accent);
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: var(--main-accent);
+    color: var(--light-accent-color);
+    margin-right: 5px;
+
+}

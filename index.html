@@ -12,23 +12,21 @@
     <nav id="nav">
         <div class="container" id="navContainer">
             <h1 class="nav-header"> Link Saver</h1>
-            <a href="" id="addBtn">+</a>
+            <a id="addBtn">+</a>
         </div>
     </nav>
 
     <div class="container">
-        <div class="panel" id="addLinkPanel">
-            <h3 class="panel-heading">Add Link</h3>
+        <div class="panel hidden" id="addLinkPanel">
+            <h3 class="header">Add Link</h3>
 
             <form id="addLinkForm">
-                <input type="text" name="title" id="linkTitle" class="form-control"
-                placeholder="Title">
+                <input type="text" name="title" id="linkTitle" class="form-control" placeholder="Title">
 
-                <input type="text" name="url" id="linkUrl" class="form-control"
-                placeholder="URL">
+                <input type="text" name="url" id="linkUrl" class="form-control" placeholder="URL">
 
                 <input type="text" name="category" id="linkCategory" class="form-control"
-                placeholder="Categories (Press Enter after each category)">
+                    placeholder="Categories (Press Enter after each category)">
 
                 <div class="addedCategories">
 
@@ -41,7 +39,24 @@
         </div>
 
         <div id="linksList">
+            <!-- <div class="link panel">
 
+                <div class="link-options">
+                    <button class="btn-sm">Delete</button>
+                    <button class="btn-sm">Edit</button>
+                </div>
+                <a href="#">
+                    <h1 class="header">Link Title</h1>
+                </a>
+
+                <p class="link-date">10/07/2020</p>
+
+                <div class="categories">
+                    Categories:
+                    <span class="category">Web Dev</span>
+                    <span class="category">Javascript</span>
+                </div>
+            </div> -->
         </div>
     </div>
 
