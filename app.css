@@ -7,6 +7,16 @@
     --main-grey:#555; 
 }
 
+.full-screen-opaque {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.85);
+    z-index: 5;
+}
+
 /* Reset */
 
 * {
@@ -27,6 +37,7 @@ a {
 a:hover {
     cursor: pointer;
 }
+
 
 .container {
     width: 80%;
@@ -50,11 +61,23 @@ a:hover {
 #addBtn {
     font-size: 24px;
     color: black;
+    transition: 0.25;
+}
+
+#addBtn:hover {
+    transform: scale(1.2);
 }
 
 .nav-header {
     color: var(--dark-accent-color);
     font-size: 20px;
+    transition: all 0.25;
+}
+
+.nav-header:hover {
+    color: whitesmoke;
+    letter-spacing: 10px;
+    transform: scale(1.05);
 }
 
 .header {
@@ -79,8 +102,15 @@ a:hover {
 
 }
 
+#addLinkContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-
+#addLinkContainer.hidden {
+    display: none;
+}
 /* form */
 
 .form-control {
@@ -102,6 +132,7 @@ input[type='submit'], button {
     background-color: var(--main-accent);
     color: whitesmoke;
     font-size: 16px;
+    transition: all 0.5s;
 }
 
 input[type='submit']:hover, button:hover {
@@ -146,5 +177,36 @@ input[type='submit']:hover, button:hover {
     background-color: var(--main-accent);
     color: var(--light-accent-color);
     margin-right: 5px;
+}
 
+
+#linksList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    flex-basis: 100%;
+}
+
+@media only screen and (min-width: 786px) {
+    .flex-item {
+        flex-basis: 50%;
+    }
+}
+
+@media only screen and (min-width: 984px) {
+    .flex-item {
+        flex-basis: 33%;
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    #nav {
+        height: 100px;
+    }
+    #navContainer {
+        flex-direction: column;
+        justify-content: center;
+    }
 }
